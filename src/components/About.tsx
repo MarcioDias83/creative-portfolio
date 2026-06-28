@@ -30,12 +30,12 @@ export default function About() {
   return (
     <section ref={sectionRef} className="py-20 md:py-28" id="about">
       <div className="grid grid-cols-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="col-start-2 col-span-4">
+        <div className="col-start-2 col-span-2">
           <h2 className="reveal-section opacity-0 translate-y-6 transition-all duration-700 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {t.about.label}
           </h2>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-8">
           <p className="reveal-section opacity-0 translate-y-6 transition-all duration-700 font-sans text-sm md:text-[0.9375rem] leading-[1.7] text-[var(--text)] mb-5">
             <span className="float-left text-[3.5em] leading-[0.8] mr-2 font-serif text-[var(--accent)]">
               {lang === 'pt' ? 'P' : 'I'}

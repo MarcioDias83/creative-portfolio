@@ -26,7 +26,7 @@ export default function Hero() {
         />
       </div>
       <div className="relative z-10 grid grid-cols-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="col-start-2 col-span-3">
+        <div className="col-start-2 col-span-2">
           <p className="reveal-item opacity-0 transition-opacity duration-700 font-sans text-xs font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {t.hero.label}
           </p>
@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relative z-10 grid grid-cols-12 px-4 md:px-8 max-w-7xl mx-auto mt-12">
-        <div className="col-start-2 col-span-3">
+        <div className="col-start-2 col-span-2">
           <p className="reveal-item opacity-0 transition-opacity duration-700 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {lang === 'pt' ? 'localizado em' : 'based in'}
           </p>
@@ -62,7 +62,7 @@ export default function Hero() {
             {t.hero.based}
           </p>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-4">
           <p className="reveal-item opacity-0 transition-opacity duration-700 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {lang === 'pt' ? 'foco' : 'focus'}
           </p>
@@ -70,7 +70,7 @@ export default function Hero() {
             {t.hero.focus}
           </p>
         </div>
-        <div className="col-span-3">
+        <div className="col-span-4">
           <p className="reveal-item opacity-0 transition-opacity duration-700 font-sans text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {lang === 'pt' ? 'disponibilidade' : 'availability'}
           </p>

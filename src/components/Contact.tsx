@@ -45,12 +45,12 @@ export default function Contact() {
   return (
     <section ref={ref} className="py-20 md:py-28" id="contact">
       <div className="grid grid-cols-12 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="col-start-2 col-span-4">
+        <div className="col-start-2 col-span-2">
           <h2 className="reveal-section opacity-0 translate-y-6 transition-all duration-700 font-sans text-[0.75rem] font-semibold uppercase tracking-[0.15em] text-[var(--text-secondary)]">
             {t.contact.label}
           </h2>
         </div>
-        <div className="col-span-6">
+        <div className="col-span-8">
           <div className="reveal-section opacity-0 translate-y-6 transition-all duration-700 flex items-center gap-4 p-5 border border-[var(--border-light)] rounded-lg mb-10 hover:border-[var(--accent)] transition-colors">
             <span className="flex items-center justify-center w-11 h-11 rounded-lg bg-[var(--accent)] text-white shrink-0">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
