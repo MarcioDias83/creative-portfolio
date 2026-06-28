@@ -63,7 +63,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <form onSubmit={handleSubmit} className="reveal-section opacity-0 translate-y-6 transition-all duration-700 mb-10">
+          <form onSubmit={handleSubmit} className="reveal-section opacity-0 translate-y-6 transition-all duration-700 mb-10 p-5 border border-[var(--border-light)] rounded-lg">
             <div className="flex flex-col md:flex-row gap-3">
               <input
                 type="text" name="name" required placeholder={t.contact.formName}
