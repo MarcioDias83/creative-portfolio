@@ -75,12 +75,12 @@ export default function Services() {
                   </div>
                 </div>
                 <a
-                  href="https://linktr.ee/igrejacasa"
+                  href="https://wa.me/5551984607739"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-primary whitespace-nowrap"
                 >
-                  Acessar Links
+                  Fale Conosco
                 </a>
               </div>
             </div>

@@ -1,6 +1,43 @@
+'use client'
+
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
+const services = [
+  { day: 3, label: 'quarta', artigo: 'nesta' },
+  { day: 6, label: 'sábado', artigo: 'neste' },
+  { day: 0, label: 'domingo', artigo: 'neste' },
+]
+
+function getNextService() {
+  const now = new Date()
+  const currentDay = now.getDay()
+  const currentHour = now.getHours()
+
+  let best = services[0]
+  let minDays = Infinity
+
+  for (const s of services) {
+    let daysUntil = (s.day - currentDay + 7) % 7
+    if (daysUntil === 0 && currentHour >= 20) {
+      daysUntil = 7
+    }
+    if (daysUntil < minDays) {
+      minDays = daysUntil
+      best = s
+    }
+  }
+
+  return best
+}
+
 export default function CTA() {
+  const [next, setNext] = useState(services[1])
+
+  useEffect(() => {
+    setNext(getNextService())
+  }, [])
+
   return (
     <section className="relative overflow-hidden">
       <div className="relative h-[65vh] min-h-[500px] flex items-center justify-center">
@@ -19,7 +56,7 @@ export default function CTA() {
             <span className="block text-white/90">VENHA A</span>
             <span className="block gradient-text">CASA</span>
             <span className="block text-white/80 text-2xl sm:text-3xl lg:text-4xl mt-4 font-light tracking-normal">
-              neste sábado
+              {next.artigo} {next.label}
             </span>
           </h2>
           <p className="text-base text-[var(--text-secondary)] max-w-lg mx-auto mb-10 leading-relaxed">
@@ -34,11 +71,11 @@ export default function CTA() {
               </svg>
               Planeje sua Visita
             </a>
-            <a href="https://linktr.ee/igrejacasa" target="_blank" rel="noopener noreferrer" className="btn-ghost">
+            <a href="https://wa.me/5551984607739" target="_blank" rel="noopener noreferrer" className="btn-ghost">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Linktree
+              WhatsApp
             </a>
           </div>
         </div>

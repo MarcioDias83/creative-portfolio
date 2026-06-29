@@ -1,20 +1,19 @@
 'use client'
 
-import { useEffect } from 'react'
 import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 
 const values = [
-  { icon: '✝️', title: 'Jesus em primeiro lugar', desc: 'Cristo é o centro de tudo que fazemos', img: '/images/hero-worship.jpg' },
-  { icon: '❤️', title: 'Amor ao próximo', desc: 'Acolhemos a todos sem distinção', img: '/images/worship-crowd.jpg' },
-  { icon: '🤲', title: 'Serviço', desc: 'Servir é a nossa essência', img: '/images/worship-hands.jpg' },
-  { icon: '⭐', title: 'Excelência', desc: 'Fazemos tudo com dedicação e qualidade', img: '/images/worship-stage.jpg' },
-  { icon: '🛡️', title: 'Integridade', desc: 'Vivemos com honestidade e transparência', img: '/images/church-interior.jpg' },
-  { icon: '🤝', title: 'Comunhão', desc: 'A vida é melhor em comunidade', img: '/images/worship-crowd.jpg' },
-  { icon: '👨‍👩‍👧‍👦', title: 'Família', desc: 'Família é prioridade', img: '/images/church-seats.jpg' },
-  { icon: '📖', title: 'Discipulado', desc: 'Crescimento espiritual contínuo', img: '/images/church-interior.jpg' },
-  { icon: '🎁', title: 'Generosidade', desc: 'Abençoamos com alegria', img: '/images/worship-hands.jpg' },
+  { title: 'Jesus em primeiro lugar', desc: 'Cristo é o centro de tudo que fazemos', img: '/images/hero-worship.jpg' },
+  { title: 'Amor ao próximo', desc: 'Acolhemos a todos sem distinção', img: '/images/worship-crowd.jpg' },
+  { title: 'Serviço', desc: 'Servir é a nossa essência', img: '/images/worship-hands.jpg' },
+  { title: 'Excelência', desc: 'Fazemos tudo com dedicação e qualidade', img: '/images/worship-stage.jpg' },
+  { title: 'Integridade', desc: 'Vivemos com honestidade e transparência', img: '/images/church-interior.jpg' },
+  { title: 'Comunhão', desc: 'A vida é melhor em comunidade', img: '/images/worship-crowd.jpg' },
+  { title: 'Família', desc: 'Família é prioridade', img: '/images/church-seats.jpg' },
+  { title: 'Discipulado', desc: 'Crescimento espiritual contínuo', img: '/images/church-interior.jpg' },
+  { title: 'Generosidade', desc: 'Abençoamos com alegria', img: '/images/worship-hands.jpg' },
 ]
 
 export default function About() {
@@ -28,13 +27,6 @@ export default function About() {
     if (dir === 'left') emblaApi.scrollPrev()
     else emblaApi.scrollNext()
   }
-
-  useEffect(() => {
-    if (!emblaApi) return
-    const unused = () => {}
-    emblaApi.on('select', unused)
-    return () => { emblaApi.off('select', unused) }
-  }, [emblaApi])
 
   return (
     <section id="sobre" className="section-padding relative overflow-hidden">
@@ -51,7 +43,7 @@ export default function About() {
             </h2>
             <p className="text-base text-[var(--text-secondary)] leading-relaxed mb-5">
               Somos uma igreja cristã contemporânea centrada nas Sagradas Escrituras,
-              fundada em 2008. Nosso objetivo é glorificar o Nome de Jesus, trazer
+              fundada em 2019. Nosso objetivo é glorificar o Nome de Jesus, trazer
               Sua Presença nas nossas reuniões e levar cada membro da CASA a refletir
               a Imagem e Semelhança de Deus.
             </p>
@@ -135,7 +127,7 @@ export default function About() {
 
           <button
             onClick={() => scroll('left')}
-            className="absolute left-3 sm:left-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--bg-elevated-2)] border border-[var(--glass-border)] flex items-center justify-center text-[var(--text-secondary)] hover:text-white hover:border-[var(--accent)]/30 hover:bg-[var(--accent-soft)] transition-all duration-300 cursor-pointer z-10"
+            className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--bg-elevated-2)] border border-[var(--glass-border)] flex items-center justify-center text-[var(--text-secondary)] hover:text-white hover:border-[var(--accent)]/30 hover:bg-[var(--accent-soft)] transition-all duration-300 cursor-pointer z-20"
             aria-label="Anterior"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -145,7 +137,7 @@ export default function About() {
 
           <button
             onClick={() => scroll('right')}
-            className="absolute right-3 sm:right-8 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--bg-elevated-2)] border border-[var(--glass-border)] flex items-center justify-center text-[var(--text-secondary)] hover:text-white hover:border-[var(--accent)]/30 hover:bg-[var(--accent-soft)] transition-all duration-300 cursor-pointer z-10"
+            className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--bg-elevated-2)] border border-[var(--glass-border)] flex items-center justify-center text-[var(--text-secondary)] hover:text-white hover:border-[var(--accent)]/30 hover:bg-[var(--accent-soft)] transition-all duration-300 cursor-pointer z-20"
             aria-label="Próximo"
           >
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

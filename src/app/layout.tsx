@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Casa Church — Servir é a nossa essência. Jesus é a nossa paixão. | Porto Alegre',
-  description: 'Igreja cristã contemporânea em Porto Alegre. Ambiente familiar, comunidade acolhedora. Cultos às quartas, sextas e sábados. Venha para a CASA.',
+  description: 'Igreja cristã contemporânea em Porto Alegre. Ambiente familiar, comunidade acolhedora. Cultos às quartas, sábados e domingos. Venha para a CASA.',
   keywords: 'igreja, igreja evangélica, Porto Alegre, Restinga, culto, cristã, fé, Casa Church, adoração, família',
 }
 

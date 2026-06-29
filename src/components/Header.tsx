@@ -16,8 +16,10 @@ export default function Header() {
   const links = [
     { label: 'Quem Somos', href: '#sobre' },
     { label: 'Cultos', href: '#cultos' },
-    { label: 'Ministérios', href: '#ministerios' },
     { label: 'Visita', href: '#visita' },
+    { label: 'Batismo', href: '#batismo' },
+    { label: 'Ministérios', href: '#ministerios' },
+    { label: 'Contribua', href: '#contribua' },
     { label: 'Contato', href: '#contato' },
   ]
 
@@ -31,13 +33,13 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <a href="#" className="flex items-center group">
-          <div className="w-[120px] h-[120px] relative">
+          <div className="w-[64px] h-[64px] relative">
             <Image
               src="/images/casa.png"
               alt="Casa Church"
               fill
               className="object-contain"
-              sizes="120px"
+              sizes="64px"
             />
           </div>
         </a>

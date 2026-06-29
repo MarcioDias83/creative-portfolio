@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/hero-worship.jpg"
-          alt="Casa Church worship"
+          alt="Louvor na Casa Church"
           fill
           className="object-cover"
           priority
@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="warm-glow warm-glow-1" />
       <div className="warm-glow warm-glow-2" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-24">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center pt-10">
         <div
           className="pill mb-6 mx-auto w-fit"
           style={{ animation: 'fadeInUp 0.8s ease-out' }}
@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
 
         <div
-          className="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto"
+          className="mt-32 grid grid-cols-3 gap-8 max-w-lg mx-auto"
           style={{ animation: 'fadeInUp 0.8s ease-out 0.4s both' }}
         >
           <div className="text-center">
@@ -81,17 +81,17 @@ export default function Hero() {
             <div className="text-[10px] text-[var(--text-muted)] mt-2 uppercase tracking-[0.25em] font-medium">Cultos Semana</div>
           </div>
           <div className="text-center border-x border-white/5">
-            <div className="text-3xl sm:text-4xl font-black font-[family-name:var(--font-display)] gradient-text">1300+</div>
-            <div className="text-[10px] text-[var(--text-muted)] mt-2 uppercase tracking-[0.25em] font-medium">Voluntários</div>
+            <div className="text-3xl sm:text-4xl font-black font-[family-name:var(--font-display)] gradient-text">7</div>
+            <div className="text-[10px] text-[var(--text-muted)] mt-2 uppercase tracking-[0.25em] font-medium">Anos de história</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl sm:text-4xl font-black font-[family-name:var(--font-display)] gradient-text">2008</div>
-            <div className="text-[10px] text-[var(--text-muted)] mt-2 uppercase tracking-[0.25em] font-medium">Fundada</div>
+            <div className="text-3xl sm:text-4xl font-black font-[family-name:var(--font-display)] gradient-text">2019</div>
+            <div className="text-[10px] text-[var(--text-muted)] mt-2 uppercase tracking-[0.25em] font-medium">Desde</div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10">
         <a href="#sobre" className="flex flex-col items-center gap-2 text-white/15 hover:text-white/50 transition-colors duration-500">
           <span className="text-[9px] uppercase tracking-[0.35em] font-medium">Saiba mais</span>
           <div className="w-5 h-8 rounded-full border-2 border-current flex items-start justify-center p-1">

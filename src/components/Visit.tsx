@@ -24,15 +24,22 @@ export default function Visit() {
                     <div className="text-[11px] text-white/50">Cultos por semana</div>
                   </div>
                   <div className="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/5">
-                    <div className="text-xl font-black font-[family-name:var(--font-display)] gradient-text mb-0.5">🎵</div>
+                    <svg className="w-5 h-5 mx-auto mb-1 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
                     <div className="text-[11px] text-white/50">Louvor ao vivo</div>
                   </div>
                   <div className="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/5">
-                    <div className="text-xl font-black font-[family-name:var(--font-display)] gradient-text mb-0.5">☕</div>
+                    <svg className="w-5 h-5 mx-auto mb-1 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 22c4.418 0 8-3.134 8-7 0-3.866-3.582-10-8-10S4 11.134 4 15c0 3.866 3.582 7 8 7zm0 0c-2.21 0-4-1.567-4-3.5S9.79 15 12 15s4 1.567 4 3.5S14.21 22 12 22z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v3" />
+                    </svg>
                     <div className="text-[11px] text-white/50">Café grátis</div>
                   </div>
                   <div className="bg-white/5 backdrop-blur-md rounded-xl p-4 border border-white/5">
-                    <div className="text-xl font-black font-[family-name:var(--font-display)] gradient-text mb-0.5">👶</div>
+                    <svg className="w-5 h-5 mx-auto mb-1 text-[var(--accent)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
                     <div className="text-[11px] text-white/50">CASA Kids</div>
                   </div>
                 </div>
@@ -76,9 +83,9 @@ export default function Visit() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <a href="https://linktr.ee/igrejacasa" className="btn-primary">
+              <a href="https://wa.me/5551984607739" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 Agendar Visita
               </a>
