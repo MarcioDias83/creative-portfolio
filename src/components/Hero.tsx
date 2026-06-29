@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
 
         <div
-          className="mt-32 grid grid-cols-3 gap-8 max-w-lg mx-auto"
+          className="mt-16 sm:mt-24 lg:mt-32 grid grid-cols-3 gap-8 max-w-lg mx-auto"
           style={{ animation: 'fadeInUp 0.8s ease-out 0.4s both' }}
         >
           <div className="text-center">
@@ -91,7 +91,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute bottom-16 lg:bottom-24 left-1/2 -translate-x-1/2 z-10">
         <a href="#sobre" className="flex flex-col items-center gap-2 text-white/15 hover:text-white/50 transition-colors duration-500">
           <span className="text-[9px] uppercase tracking-[0.35em] font-medium">Saiba mais</span>
           <div className="w-5 h-8 rounded-full border-2 border-current flex items-start justify-center p-1">
