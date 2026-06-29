@@ -1,23 +1,24 @@
+import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
 import Services from '@/components/Services'
-import Projects from '@/components/Projects'
-import Contact from '@/components/Contact'
+import Ministries from '@/components/Ministries'
+import Visit from '@/components/Visit'
+import Location from '@/components/Location'
+import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero />
-      <div className="w-full h-px bg-[var(--border-light)]" />
       <About />
-      <div className="w-full h-px bg-[var(--border-light)]" />
       <Services />
-      <div className="w-full h-px bg-[var(--border-light)]" />
-      <Projects />
-      <div className="w-full h-px bg-[var(--border-light)]" />
-      <Contact />
-      <div className="w-full h-px bg-[var(--border-light)]" />
+      <Ministries />
+      <Visit />
+      <Location />
+      <CTA />
       <Footer />
     </>
   )

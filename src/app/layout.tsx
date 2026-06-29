@@ -1,33 +1,25 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { AppProvider } from './providers'
-import Header from '@/components/Header'
-import ScrollProgress from '@/components/ScrollProgress'
-import GrainOverlay from '@/components/GrainOverlay'
 
 export const metadata: Metadata = {
-  title: 'Marcio Dias — Full-stack & UI Designer',
-  description: 'Portfolio de Marcio Dias — Desenvolvedor Full-stack e Designer de Interfaces do Rio Grande do Sul.',
+  title: 'Casa Church — Servir é a nossa essência. Jesus é a nossa paixão. | Porto Alegre',
+  description: 'Igreja cristã contemporânea em Porto Alegre. Ambiente familiar, comunidade acolhedora. Cultos às quartas, sextas e sábados. Venha para a CASA.',
+  keywords: 'igreja, igreja evangélica, Porto Alegre, Restinga, culto, cristã, fé, Casa Church, adoração, família',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;350;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-screen flex flex-col">
-        <AppProvider>
-          <ScrollProgress />
-          <Header />
-          <main className="flex-1">{children}</main>
-          <GrainOverlay />
-        </AppProvider>
+      <body className="min-h-screen antialiased">
+        {children}
       </body>
     </html>
   )
