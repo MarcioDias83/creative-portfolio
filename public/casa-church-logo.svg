@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" fill="none">
+  <defs>
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E0E0"/>
+      <stop offset="30%" stop-color="#B0B0B0"/>
+      <stop offset="50%" stop-color="#D0D0D0"/>
+      <stop offset="70%" stop-color="#A0A0A0"/>
+      <stop offset="100%" stop-color="#C0C0C0"/>
+    </linearGradient>
+    <linearGradient id="innerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8D8D8"/>
+      <stop offset="50%" stop-color="#A8A8A8"/>
+      <stop offset="100%" stop-color="#C8C8C8"/>
+    </linearGradient>
+    <linearGradient id="crossGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C0C0C0"/>
+      <stop offset="50%" stop-color="#909090"/>
+      <stop offset="100%" stop-color="#B0B0B0"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer hexagon -->
+  <polygon points="100,8 180,52 180,140 100,184 20,140 20,52" stroke="url(#metalGrad)" stroke-width="6" fill="none"/>
+  <!-- Inner hexagon -->
+  <polygon points="100,24 168,62 168,132 100,170 32,132 32,62" stroke="url(#innerGrad)" stroke-width="3" fill="none"/>
+  <!-- Church body -->
+  <rect x="70" y="80" width="60" height="50" rx="2" fill="url(#innerGrad)"/>
+  <!-- Church roof / steeple -->
+  <polygon points="100,45 75,80 125,80" fill="url(#innerGrad)"/>
+  <!-- Cross -->
+  <rect x="97" y="30" width="6" height="30" rx="1" fill="url(#crossGrad)"/>
+  <rect x="90" y="38" width="20" height="5" rx="1" fill="url(#crossGrad)"/>
+  <!-- Church steps -->
+  <rect x="75" y="130" width="50" height="5" rx="1" fill="url(#innerGrad)"/>
+  <rect x="80" y="135" width="40" height="5" rx="1" fill="url(#innerGrad)"/>
+  <rect x="85" y="140" width="30" height="5" rx="1" fill="url(#innerGrad)"/>
+  <!-- Church door -->
+  <rect x="92" y="110" width="16" height="20" rx="8" fill="#888"/>
+  <!-- Text -->
+  <text x="100" y="200" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="url(#metalGrad)" letter-spacing="1">Casa</text>
+  <text x="100" y="218" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="url(#metalGrad)" letter-spacing="1">Church</text>
+</svg>
