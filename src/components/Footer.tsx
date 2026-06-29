@@ -67,7 +67,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-xs uppercase tracking-[0.15em] text-white/60">Ministérios</h4>
             <ul className="space-y-2.5 text-sm text-[var(--text-secondary)]">
-              {['CASA Kids', 'Jovens', 'Casais', 'Mulheres', 'Homens', 'Pequenos Grupos', 'Louvor', 'Recepção', 'Oração', 'Fundamentos', 'Voluntariado'].map((item) => (
+              {['CASA Kids', 'Jovens', 'Casais', 'Mulheres', 'Homens', 'Louvor'].map((item) => (
                 <li key={item}>
                   <a href="#ministerios" className="hover:text-white hover:translate-x-0.5 transition-all duration-300 inline-block text-xs">
                     {item}
